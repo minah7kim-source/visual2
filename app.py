@@ -337,8 +337,9 @@ for tab, p_name in zip(tabs, tab_names):
         
         # Wordcloud generator helper
         def generate_wc_image(data_dict):
+            font_p = 'NanumGothic.ttf' if os.path.exists('NanumGothic.ttf') else 'C:/Windows/Fonts/malgun.ttf'
             wc = WordCloud(
-                font_path='C:/Windows/Fonts/malgun.ttf',
+                font_path=font_p,
                 background_color='white',
                 width=800,
                 height=400,
